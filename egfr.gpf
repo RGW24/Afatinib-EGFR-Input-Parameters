@@ -1,0 +1,19 @@
+npts 126 126 126                     # num.grid points in xyz
+gridfld EGFR.maps.fld                # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N NA OA SA     # receptor atom types
+ligand_types A C F NA Cl OA N HD     # ligand atom types
+receptor EGFR.pdbqt                  # macromolecule
+gridcenter 50.68 1.374 -21.037       # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map EGFR.A.map                       # atom-specific affinity map
+map EGFR.C.map                       # atom-specific affinity map
+map EGFR.F.map                       # atom-specific affinity map
+map EGFR.NA.map                      # atom-specific affinity map
+map EGFR.Cl.map                      # atom-specific affinity map
+map EGFR.OA.map                      # atom-specific affinity map
+map EGFR.N.map                       # atom-specific affinity map
+map EGFR.HD.map                      # atom-specific affinity map
+elecmap EGFR.e.map                   # electrostatic potential map
+dsolvmap EGFR.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
